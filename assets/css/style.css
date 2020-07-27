@@ -1,12 +1,246 @@
-header {
-  background-color: red;
-  color: green;
+@font-face {
+  font-family: TTNorms-Black;
+  src: url("fonts/TTNorms-Black.ttf");
+}
+
+@font-face {
+  font-family: TTNorms-BlackItalic;
+  src: url("fonts/TTNorms-BlackItalic.ttf");
+}
+
+@font-face {
+  font-family: TTNorms-Bold;
+  src: url("fonts/TTNorms-Bold.ttf");
+}
+
+@font-face {
+  font-family: TTNorms-BoldItalic;
+  src: url("fonts/TTNorms-BoldItalic.ttf");
+}
+
+@font-face {
+  font-family: TTNorms-ExtraBold;
+  src: url("fonts/TTNorms-ExtraBold.ttf");
+}
+
+@font-face {
+  font-family: TTNorms-ExtraBoldItalic;
+  src: url("fonts/TTNorms-ExtraBoldItalic.ttf");
+}
+
+@font-face {
+  font-family: TTNorms-ExtraLight;
+  src: url("fonts/TTNorms-ExtraLight.ttf");
+}
+
+@font-face {
+  font-family: TTNorms-ExtraLightItalic;
+  src: url("fonts/TTNorms-ExtraLightItalic.ttf");
+}
+
+@font-face {
+  font-family: TTNorms-Heavy;
+  src: url("fonts/TTNorms-Heavy.ttf");
+}
+
+@font-face {
+  font-family: TTNorms-HeavyItalic;
+  src: url("fonts/TTNorms-HeavyItalic.ttf");
+}
+
+@font-face {
+  font-family: TTNorms-Italic;
+  src: url("fonts/TTNorms-Italic.ttf");
+}
+
+@font-face {
+  font-family: TTNorms-Light;
+  src: url("fonts/TTNorms-Light.ttf");
+}
+
+@font-face {
+  font-family: TTNorms-LightItalic;
+  src: url("fonts/TTNorms-LightItalic.ttf");
+}
+
+@font-face {
+  font-family: TTNorms-Medium;
+  src: url("fonts/TTNorms-Medium.ttf");
+}
+
+@font-face {
+  font-family: TTNorms-MediumItalic;
+  src: url("fonts/TTNorms-MediumItalic.ttf");
+}
+
+@font-face {
+  font-family: TTNorms-Regular;
+  src: url("fonts/TTNorms-Regular.ttf");
+}
+
+@font-face {
+  font-family: TTNorms-Thin;
+  src: url("fonts/TTNorms-Thin.ttf");
+}
+
+@font-face {
+  font-family: TTNorms-ThinItalic;
+  src: url("fonts/TTNorms-ThinItalic.ttf");
 }
 
 body {
   font-size: 20px;
+  height: 100%;
 }
 
-body div {
-  font-size: 10px;
+section {
+  height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.first {
+  background: url("img/bg/bg01.png") center center no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  min-height: 400px;
+  color: #fff;
+  background-attachment: fixed;
+}
+
+.navbar {
+  font-family: TTNorms-Regular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  color: #fff;
+  background-color: transparent;
+}
+
+.navbar a {
+  display: inline-block;
+  color: #fff !important;
+  text-decoration: none !important;
+  cursor: pointer;
+  position: relative;
+}
+
+.navbar a:after {
+  margin-top: 27px;
+  background-color: #fff;
+  display: block;
+  content: "";
+  height: 2px;
+  width: 0%;
+  left: 50%;
+  position: absolute;
+  -webkit-transition: width 0.3s ease-in-out;
+  transition: width 0.3s ease-in-out;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+a:hover:after,
+a:focus:after {
+  width: 100%;
+}
+
+.navbar .vector {
+  width: 0px;
+  height: 148px;
+  padding-top: 124px;
+  border: 1px solid #ffffff;
+}
+
+.navbar .vector::after {
+  content: "01";
+  padding-left: 34px;
+}
+
+.first .bg-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: TTNorms-Bold;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 120px;
+  line-height: 142px;
+  color: #ffffff;
+  opacity: 0.03;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.logo img {
+  margin-top: 145px;
+}
+
+.phrase h3 {
+  font-family: TTNorms-Regular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 47px;
+  margin-top: 74px;
+}
+
+.down h3 {
+  font-family: TTNorms-Regular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  margin-top: 206px;
+}
+
+.networks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.networks .vector {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  width: 119.5px;
+  height: 0px;
+  border: 1px solid #ffffff;
+}
+
+.networks h3 {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  font-family: TTNorms-Regular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.second {
+  background: url("img/bg/bg01.png") center center no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  min-height: 400px;
+  color: #fff;
+  background-attachment: fixed;
+}
+
+.third {
+  background-color: green;
 }

@@ -1,0 +1,102 @@
+.first {
+   background: url("img/bg/bg01.png") center center no-repeat;
+   background-size: cover;
+   width: 100%;
+   height: 100vh;
+   min-height: 400px;
+   color: #fff;
+   background-attachment: fixed;
+}
+
+.navbar {
+   font-family: TTNorms-Regular;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 24px;
+   line-height: 28px;
+   color: #fff;
+   background-color: transparent;
+}
+.navbar a {
+   display: inline-block;
+   color: #fff !important;
+   text-decoration: none !important;
+   cursor: pointer;
+   position: relative;
+}
+.navbar a:after {
+   margin-top: 27px;
+   background-color: #fff;
+   display: block;
+   content: "";
+   height: 2px;
+   width: 0%;
+   left: 50%;
+   position: absolute;
+   transition: width 0.3s ease-in-out;
+   transform: translateX(-50%);
+}
+a:hover:after,
+a:focus:after {
+   width: 100%;
+}
+
+.navbar .vector {
+   width: 0px;
+   height: 148px;
+   padding-top: 124px;
+   border: 1px solid #ffffff;
+}
+.navbar .vector::after {
+   content: "01";
+   padding-left: 34px;
+}
+.first .bg-text {
+   display: flex;
+   font-family: TTNorms-Bold;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 120px;
+   line-height: 142px;
+   color: #ffffff;
+   opacity: 0.03;
+   align-items: center;
+   justify-content: flex-end;
+}
+.logo img {
+   margin-top: 145px;
+}
+.phrase h3 {
+   font-family: TTNorms-Regular;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 40px;
+   line-height: 47px;
+   margin-top: 74px;
+}
+.down h3 {
+   font-family: TTNorms-Regular;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 24px;
+   line-height: 28px;
+   margin-top: 206px;
+}
+.networks {
+   display: flex;
+   flex-direction: column;
+}
+.networks .vector {
+   transform: rotate(-90deg);
+   width: 119.5px;
+   height: 0px;
+   border: 1px solid #ffffff;
+}
+.networks h3 {
+   transform: rotate(-90deg);
+   font-family: TTNorms-Regular;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 24px;
+   line-height: 28px;
+}
