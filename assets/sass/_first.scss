@@ -9,6 +9,7 @@
 }
 
 .navbar {
+   margin-top: 50px;
    font-family: TTNorms-Regular;
    font-style: normal;
    font-weight: normal;
@@ -154,18 +155,31 @@
 .networks {
    display: flex;
    flex-direction: column;
+   align-items: flex-end;
+}
+.networks__links {
+   padding-right: 0 !important;
+   padding-left: 85px !important;
+   display: flex;
+   flex-direction: column-reverse;
+   align-items: center;
+   justify-content: flex-start;
+}
+.networks__links a {
+   margin-top: 17px;
 }
 .networks .vector {
-   transform: rotate(-90deg);
-   width: 119.5px;
-   height: 0px;
+   width: 0px;
+   height: 148px;
    border: 1px solid #ffffff;
 }
 .networks h3 {
-   transform: rotate(-90deg);
+   transform: rotate(-90deg) translate(100px, 43px);
    font-family: TTNorms-Regular;
    font-style: normal;
    font-weight: normal;
    font-size: 24px;
    line-height: 28px;
+   //padding-top: 123px;
+   //padding-left: 33px;
 }
