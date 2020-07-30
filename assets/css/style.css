@@ -120,6 +120,17 @@ a {
   line-height: 28px;
   color: #fff;
   background-color: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: start !important;
+      -ms-flex-align: start !important;
+          align-items: flex-start !important;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .navbar a {
@@ -145,8 +156,8 @@ a {
           transform: translateX(-50%);
 }
 
-a:hover:after,
-a:focus:after {
+.navbar a:hover:after,
+.navbar a:focus:after {
   width: 100%;
 }
 
@@ -160,6 +171,100 @@ a:focus:after {
 .navbar .vector::after {
   content: "01";
   padding-left: 34px;
+}
+
+.navbar__side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end !important;
+      -ms-flex-align: end !important;
+          align-items: flex-end !important;
+}
+
+.burger {
+  cursor: pointer;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.burger .line1,
+.line2,
+.line3 {
+  margin: 6px 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.burger .line1 {
+  width: 38px;
+  height: 0px;
+  border: 1px solid #ffffff;
+}
+
+.burger .line2 {
+  width: 30.5px;
+  height: 0px;
+  border: 1px solid #ffffff;
+}
+
+.burger .line3 {
+  width: 22.5px;
+  height: 0px;
+  border: 1px solid #ffffff;
+}
+
+.change .line1 {
+  width: 26.5px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.change .line2 {
+  width: 4.5px;
+  -webkit-transform: rotate(-45deg) translate(13px, -18px);
+          transform: rotate(-45deg) translate(13px, -18px);
+}
+
+.change .line3 {
+  width: 14px;
+  -webkit-transform: rotate(-45deg) translate(9px, -24px);
+          transform: rotate(-45deg) translate(9px, -24px);
+}
+
+.navbar__side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 .first .bg-text {
