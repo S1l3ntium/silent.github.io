@@ -55,11 +55,23 @@
    content: "01";
    padding-left: 34px;
 }
+.lang {
+   margin: 63px 0px;
+}
 .navbar__side {
    display: flex;
+   align-self: flex-end;
    flex-direction: column;
    justify-content: flex-end;
    align-items: flex-end !important;
+}
+.navbar__menu {
+   width: 100%;
+   opacity: 0;
+}
+.open {
+   transition: 0.3s ease-in-out;
+   opacity: 1;
 }
 .burger {
    cursor: pointer;

@@ -173,10 +173,16 @@ a {
   padding-left: 34px;
 }
 
+.lang {
+  margin: 63px 0px;
+}
+
 .navbar__side {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -187,6 +193,17 @@ a {
   -webkit-box-align: end !important;
       -ms-flex-align: end !important;
           align-items: flex-end !important;
+}
+
+.navbar__menu {
+  width: 100%;
+  opacity: 0;
+}
+
+.open {
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  opacity: 1;
 }
 
 .burger {
