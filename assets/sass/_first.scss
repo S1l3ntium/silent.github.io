@@ -60,7 +60,6 @@
 }
 .navbar__side {
    display: flex;
-   align-self: flex-end;
    flex-direction: column;
    justify-content: flex-end;
    align-items: flex-end !important;
@@ -68,9 +67,10 @@
 .navbar__menu {
    width: 100%;
    opacity: 0;
+   transition: 0.5s ease-in-out;
 }
 .open {
-   transition: 0.3s ease-in-out;
+   transition: 0.5s ease-in-out;
    opacity: 1;
 }
 .burger {
