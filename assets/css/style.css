@@ -249,9 +249,9 @@ a {
   border: 1px solid #ffffff;
 }
 
-.burger:hover .line1,
-.burger:hover .line2,
-.burger:hover .line3 {
+.hover:hover .line1,
+.hover:hover .line2,
+.hover:hover .line3 {
   width: 38px;
 }
 
@@ -265,6 +265,12 @@ a {
   width: 4.5px;
   -webkit-transform: rotate(-45deg) translate(13px, -18px);
           transform: rotate(-45deg) translate(13px, -18px);
+}
+
+.change:hover .line2 {
+  width: 14px;
+  -webkit-transform: rotate(-45deg) translate(12px, -14px);
+          transform: rotate(-45deg) translate(12px, -14px);
 }
 
 .change .line3 {
