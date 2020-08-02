@@ -332,8 +332,8 @@ button {
   border: none;
   background: transparent;
   color: white;
-  border-bottom: 1px solid white;
-  border-left: 1px solid white;
+  border-bottom: 2px solid white;
+  border-left: 2px solid white;
   position: relative;
   min-width: 195.5px;
   margin-top: 68px !important;
@@ -344,7 +344,7 @@ button::after {
   position: absolute;
   top: 0;
   left: 0;
-  height: 1px;
+  height: 2px;
   width: 80%;
   background: white;
   -webkit-transition: all 0.3s;
@@ -357,7 +357,7 @@ button::before {
   right: 0;
   bottom: 0;
   height: 50%;
-  width: 1px;
+  width: 2px;
   background: white;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
