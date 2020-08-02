@@ -7,9 +7,8 @@
    color: #fff;
    background-attachment: fixed;
 }
-
 .navbar {
-   margin-top: 50px;
+   margin-top: 30px;
    font-family: TTNorms-Regular;
    font-style: normal;
    font-weight: normal;
@@ -57,7 +56,7 @@
    padding-left: 34px;
 }
 .lang {
-   margin: 63px 0px;
+   margin-top: 80px;
 }
 .navbar__side {
    display: flex;
@@ -77,12 +76,14 @@
 .burger {
    cursor: pointer;
    width: 100%;
+}
+.lines {
    display: flex;
    flex-direction: column;
    justify-content: flex-end;
    align-items: flex-end;
 }
-.burger .line1,
+.burger .lines .line1,
 .line2,
 .line3 {
    margin: 6px 0;
@@ -102,6 +103,11 @@
    width: 22.5px;
    height: 0px;
    border: 1px solid #ffffff;
+}
+.burger:hover .line1,
+.burger:hover .line2,
+.burger:hover .line3 {
+   width: 38px;
 }
 .change .line1 {
    width: 26.5px;
@@ -132,9 +138,10 @@
    opacity: 0.03;
    align-items: center;
    justify-content: flex-end;
+   margin-top: 48px;
 }
 .logo img {
-   margin-top: 145px;
+   margin-top: 74px;
 }
 .phrase h3 {
    font-family: TTNorms-Regular;
@@ -144,18 +151,78 @@
    line-height: 47px;
    margin-top: 74px;
 }
+button {
+   font-family: TTNorms-Regular !important;
+   font-style: normal !important;
+   font-weight: normal !important;
+   font-size: 24px;
+   line-height: 28px;
+   padding: 20px 16px;
+   border: none;
+   background: transparent;
+   color: white;
+   border-bottom: 1px solid white;
+   border-left: 1px solid white;
+   position: relative;
+   min-width: 195.5px;
+   margin-top: 68px !important;
+}
+button::after {
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   height: 1px;
+   width: 80%;
+   background: white;
+   transition: all 0.3s;
+}
+button::before {
+   content: "";
+   position: absolute;
+   right: 0;
+   bottom: 0;
+   height: 50%;
+   width: 1px;
+   background: white;
+   transition: all 0.3s;
+}
+button:hover::before {
+   height: 100%;
+}
+button:hover::after {
+   width: 100%;
+}
+.foot .vector {
+   cursor: pointer;
+   font-family: TTNorms-Regular;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 24px;
+   line-height: 28px;
+   text-align: center;
+   color: #ffffff;
+   display: flex;
+   align-items: center;
+   justify-content: flex-start;
+}
+.foot .vector h3 {
+   margin-top: 88px;
+}
 .down h3 {
    font-family: TTNorms-Regular;
    font-style: normal;
    font-weight: normal;
    font-size: 24px;
    line-height: 28px;
-   margin-top: 206px;
+   margin-top: 67.5px;
 }
 .networks {
    display: flex;
    flex-direction: column;
    align-items: flex-end;
+   justify-content: flex-end;
+   padding-bottom: 5px;
 }
 .networks__links {
    padding-right: 0 !important;
@@ -163,7 +230,7 @@
    display: flex;
    flex-direction: column;
    align-items: center;
-   justify-content: flex-start;
+   justify-content: flex-end;
 }
 .networks__links a {
    margin-top: 17px;
@@ -180,6 +247,4 @@
    font-weight: normal;
    font-size: 24px;
    line-height: 28px;
-   //padding-top: 123px;
-   //padding-left: 33px;
 }
