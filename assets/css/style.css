@@ -88,21 +88,9 @@
   src: url("fonts/TTNorms-ThinItalic.ttf");
 }
 
-body {
-  font-size: 20px;
-}
-
-a {
-  text-decoration: none;
-  cursor: pointer;
-}
-
 .first {
   background: url("img/bg/bg01.png") center center no-repeat;
   background-size: cover;
-  width: 100%;
-  height: 100vh;
-  min-height: 400px;
   color: #fff;
   background-attachment: fixed;
 }
@@ -158,10 +146,11 @@ a {
 }
 
 .navbar .vector {
+  background-color: #fff;
   width: 0px;
-  height: 148px;
-  padding-top: 124px;
-  border: 1px solid #ffffff;
+  height: 120px;
+  padding-top: 96px;
+  border: 1px solid #fff;
 }
 
 .navbar .vector::after {
@@ -170,7 +159,7 @@ a {
 }
 
 .lang {
-  margin-top: 80px;
+  margin-top: 50px;
 }
 
 .navbar__side {
@@ -232,21 +221,24 @@ a {
 }
 
 .burger .line1 {
+  background-color: #fff;
   width: 38px;
   height: 0px;
-  border: 1px solid #ffffff;
+  border: 1px solid #fff;
 }
 
 .burger .line2 {
+  background-color: #fff;
   width: 30.5px;
   height: 0px;
-  border: 1px solid #ffffff;
+  border: 1px solid #fff;
 }
 
 .burger .line3 {
+  background-color: #fff;
   width: 22.5px;
   height: 0px;
-  border: 1px solid #ffffff;
+  border: 1px solid #fff;
 }
 
 .hover:hover .line1,
@@ -256,27 +248,27 @@ a {
 }
 
 .change .line1 {
-  width: 26.5px;
+  width: 38px;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
 }
 
 .change .line2 {
-  width: 4.5px;
-  -webkit-transform: rotate(-45deg) translate(13px, -18px);
-          transform: rotate(-45deg) translate(13px, -18px);
+  width: 5px;
+  -webkit-transform: rotate(-45deg) translate(15px, -20px);
+          transform: rotate(-45deg) translate(15px, -20px);
 }
 
 .change:hover .line2 {
-  width: 14px;
-  -webkit-transform: rotate(-45deg) translate(12px, -14px);
-          transform: rotate(-45deg) translate(12px, -14px);
+  width: 19px;
+  -webkit-transform: rotate(-45deg) translate(12px, -16px);
+          transform: rotate(-45deg) translate(12px, -16px);
 }
 
 .change .line3 {
-  width: 14px;
-  -webkit-transform: rotate(-45deg) translate(9px, -24px);
-          transform: rotate(-45deg) translate(9px, -24px);
+  width: 19px;
+  -webkit-transform: rotate(-45deg) translate(4px, -26px);
+          transform: rotate(-45deg) translate(4px, -26px);
 }
 
 .navbar__side {
@@ -304,8 +296,6 @@ a {
   font-weight: bold;
   font-size: 120px;
   line-height: 142px;
-  color: #ffffff;
-  opacity: 0.03;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -313,6 +303,8 @@ a {
       -ms-flex-pack: end;
           justify-content: flex-end;
   margin-top: 48px;
+  color: #fff;
+  opacity: 0.3;
 }
 
 .logo img {
@@ -337,12 +329,19 @@ button {
   padding: 20px 16px;
   border: none;
   background: transparent;
-  color: white;
-  border-bottom: 2px solid white;
-  border-left: 2px solid white;
+  color: #fff;
+  border-bottom: 2px solid #fff;
+  border-left: 2px solid #fff;
   position: relative;
   min-width: 195.5px;
   margin-top: 68px !important;
+}
+
+button:hover {
+  color: #000;
+  background-color: #fff;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 button::after {
@@ -352,7 +351,7 @@ button::after {
   left: 0;
   height: 2px;
   width: 80%;
-  background: white;
+  background: #fff;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
@@ -364,7 +363,7 @@ button::before {
   bottom: 0;
   height: 50%;
   width: 2px;
-  background: white;
+  background: #fff;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
@@ -385,7 +384,7 @@ button:hover::after {
   font-size: 24px;
   line-height: 28px;
   text-align: center;
-  color: #ffffff;
+  color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -407,7 +406,7 @@ button:hover::after {
   font-weight: normal;
   font-size: 24px;
   line-height: 28px;
-  margin-top: 67.5px;
+  margin-top: 67px;
 }
 
 .networks {
@@ -446,13 +445,16 @@ button:hover::after {
 }
 
 .networks__links a {
-  margin-top: 17px;
+  margin: 9px 0 9px 0;
+  font-size: 20px;
+  color: #ffffff;
 }
 
 .networks .vector {
+  background-color: #fff;
   width: 0px;
   height: 148px;
-  border: 1px solid #ffffff;
+  border: 1px solid #fff;
 }
 
 .networks h3 {
