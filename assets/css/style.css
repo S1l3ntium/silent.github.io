@@ -125,7 +125,7 @@
   position: relative;
 }
 
-.navbar a:after {
+.navbar__menu a:after {
   margin-top: 27px;
   background-color: #fff;
   display: block;
@@ -335,6 +335,8 @@ button {
   position: relative;
   min-width: 195.5px;
   margin-top: 68px !important;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
 }
 
 button:hover {
