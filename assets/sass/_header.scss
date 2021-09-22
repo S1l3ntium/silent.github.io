@@ -1,0 +1,133 @@
+header {
+   background: url("img/bg/bg01.png") center center no-repeat;
+   background-size: cover;
+   color: #fff;
+   background-attachment: fixed;
+}
+header .navbar {
+   margin-top: 30px;
+   font-family: TTNorms-Regular;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 24px;
+   line-height: 28px;
+   color: #fff;
+   background-color: transparent;
+   display: flex;
+   flex-wrap: wrap;
+   align-items: flex-start !important;
+   justify-content: space-between;
+}
+header .navbar a {
+   display: inline-block;
+   color: #fff !important;
+   text-decoration: none !important;
+   cursor: pointer;
+   position: relative;
+}
+header .navbar__menu a:after {
+   margin-top: 27px;
+   background-color: #fff;
+   display: block;
+   content: "";
+   height: 2px;
+   width: 0%;
+   left: 50%;
+   position: absolute;
+   transition: width 0.3s ease-in-out;
+   transform: translateX(-50%);
+}
+header .navbar a:hover:after,
+header .navbar a:focus:after {
+   width: 100%;
+}
+header .navbar .vector {
+   background-color: #fff;
+   width: 0px;
+   height: 120px;
+   padding-top: 96px;
+   border: 1px solid #fff;
+}
+header .navbar .vector::after {
+   content: "01";
+   padding-left: 34px;
+}
+header .lang {
+   margin-top: 50px;
+}
+header .navbar__side {
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-end;
+   align-items: flex-end !important;
+}
+header .navbar__menu {
+   width: 100%;
+   opacity: 0;
+   transition: 0.5s ease-in-out;
+}
+header .open {
+   transition: 0.5s ease-in-out;
+   opacity: 1;
+}
+header .burger {
+   cursor: pointer;
+   width: 100%;
+}
+header .lines {
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-end;
+   align-items: flex-end;
+}
+header .burger .lines .line1,
+.line2,
+.line3 {
+   margin: 6px 0;
+   transition: 0.3s;
+}
+header .burger .line1 {
+   background-color: #fff;
+   width: 38px;
+   height: 0px;
+   border: 1px solid #fff;
+}
+header .burger .line2 {
+   background-color: #fff;
+   width: 30.5px;
+   height: 0px;
+   border: 1px solid #fff;
+}
+header .burger .line3 {
+   background-color: #fff;
+   width: 22.5px;
+   height: 0px;
+   border: 1px solid #fff;
+}
+header .hover:hover .line1,
+header .hover:hover .line2,
+header .hover:hover .line3 {
+   width: 38px;
+}
+header .change .line1 {
+   width: 38px;
+   transform: rotate(45deg);
+}
+header .change .line2 {
+   width: 5px;
+   transform: rotate(-45deg) translate(15px, -20px);
+}
+header .change:hover .line2 {
+   width: 19px;
+   transform: rotate(-45deg) translate(12px, -16px);
+}
+header .change .line3 {
+   width: 19px;
+   transform: rotate(-45deg) translate(4px, -26px);
+}
+header .navbar__side {
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-end;
+   align-items: flex-end;
+}
